@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Josefin+Sans:wght@600;700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Anek Latin', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+input {
+    border: 0;
+    padding: 10px 10px 10px 0px;
+    background: #eee;
+}
+
+input:valid:not(:focus):not(:placeholder-shown) {
+    border-color: green;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown){
+    background-color: pink;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main-container > div {
+    max-width: 500px;
+    margin: 10px;
+}
+
+#restaurent-image {
+    max-width: 100%;
+    padding: 100px 0px;
+}
+
+.reg-form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.reg-form div {
+    padding: 5px 0px;
+}
+
+.reg-form lebel {
+    position: absolute;
+}
+
+.reg-form fieldset {
+    padding: 10px 10px;
+}
+
+
+
+@media only screen
+and (max-width: 881px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #restaurent-image {
+        padding: 20px 0px;
+    }
+}
+
