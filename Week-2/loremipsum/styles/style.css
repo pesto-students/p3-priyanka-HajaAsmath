@@ -87,10 +87,18 @@ input[type=number]:invalid:not(:focus):not(:placeholder-shown),
     margin: 0 auto;
 }
 
+.submit-btn:hover {
+    background-color: rgb(211, 211, 211);
+}
+
 .select + select{
     display: block;
     border: 1px solid;
     font-size: 1rem;
+}
+
+.select + select:hover {
+    background-color: rgb(211, 211, 211);
 }
 
 
