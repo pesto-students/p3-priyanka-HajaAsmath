@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Josefin+Sans:wght@600;700&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Anek Latin', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+input[type=text],input[type=number], input[type=email] {
+    width: 95%;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    padding: 10px 10px 10px 0px;
+}
+
+input[type=text]:valid:not(:focus):not(:placeholder-shown),
+input[type=email]:valid:not(:focus):not(:placeholder-shown),
+input[type=number]:valid:not(:focus):not(:placeholder-shown) {
+  border-bottom-color: greenyellow;
+}
+
+input[type=text]:invalid:not(:focus):not(:placeholder-shown), 
+input[type=number]:invalid:not(:focus):not(:placeholder-shown),
+ input[type=email]:invalid:not(:focus):not(:placeholder-shown) {
+    background-color: pink;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main-container > div {
+    max-width: 500px;
+    margin: 10px;
+}
+
+#restaurent-image {
+    max-width: 100%;
+    padding: 100px 0px;
+}
+
+.reg-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.reg-form div {
+    padding: 5px 0px;
+}
+
+.reg-form label {
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.reg-form label:not(.radio) {
+    display: block;
+}
+
+.reg-form fieldset {
+    padding: 20px 10px;
+    margin: 10px 0px;
+}
+
+.submit-btn {
+    display: block;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.submit-btn:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.select + select{
+    display: block;
+    border: 1px solid;
+    font-size: 1rem;
+}
+
+.select + select:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+
+@media only screen
+and (max-width: 881px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #restaurent-image {
+        padding: 20px 0px;
+    }
+}
+
