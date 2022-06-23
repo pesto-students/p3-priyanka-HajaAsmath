@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+.main-container {
+    position: absolute;
+    width: 200px;
+    font-size: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+#red {
+    background-color: red;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#yellow {
+    background-color: yellow;
+}
