@@ -7,7 +7,7 @@ header {
 }
 
 .main-container {
-    position: absolute;
+    position: relative;
     width: 200px;
     font-size: 0px;
     left: 0px;
@@ -30,47 +30,47 @@ p {
     display: inline-block;
 }
 
+.box {
+    transition: transform 2s ease;
+}
+
+#red {
+    background-color: red;
+    transform-origin: top left;
+}
+
+#blue {
+    background-color: blue;
+    transform-origin: bottom left;
+}
+
+#yellow {
+    background-color: yellow;
+    transform-origin: top right;
+}
+
+#green {
+    background-color: green;
+    transform-origin: bottom right;
+}
+
 .main-container:hover > .left > #red {
     transform: rotate(90deg);
-    transform-origin: top left;
-    transition: transform 2s ease;
 }
 
 .main-container:hover > .left > #blue {
     transform: rotate(-90deg);
-    transform-origin: bottom left;
-    transition: transform 2s ease;
 }
 
 .main-container:hover > .right > #yellow {
     transform: rotate(-90deg);
-    transform-origin: top right;
-    transition: transform 2s ease;
 }
 
 .main-container:hover > .right > #green {
     transform: rotate(90deg);
-    transform-origin: bottom right;
-    transition: transform 2s ease;
 }
 
 .box {
     height: 100px;
     width: 100px;
-}
-
-#red {
-    background-color: red;
-}
-
-#blue {
-    background-color: blue;
-}
-
-#green {
-    background-color: green;
-}
-
-#yellow {
-    background-color: yellow;
 }
