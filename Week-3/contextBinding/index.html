@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            fname: 'haja',
+            lname: 'asmath'
+        }
+
+        newFunc = function(city, state) {
+            console.log(`${this.fname} ${this.lname} is from ${city}, ${state}`);
+        }
+
+        newFunc('Tanjavur', 'TN');
+
+        //Binded the function using 'bind' hence 'this' will now refer to the object it is binded to
+        const bondedfunc = newFunc.bind(obj);
+        bondedfunc('Tanjavur','TN');
+
+        const newbond = newFunc.bind(obj, 'Bangalore');
+        newbond('TN');
+        //Since the first argument is permanently bonded 
+        newbond('Hydrabad', 'TN');
+
+        newFunc2 = function(course, degree) {
+            console.log(`${this.fname} ${this.lname} has studied ${course}, ${degree}`);
+        }
+
+        newFunc2.call(obj, 'CSE', 'BE');
+        newFunc2.call(obj, 'ECE', 'B.Tech');
+        //since call doesn't create a permanent binding, this will refer to the global/windoe object which doesn't have fname and lname
+        newFunc2('Mech', 'ME');
+
+        //apply is identical to call except it accept array of arguments. this can be used in situation where we need to call a function which accepts separate arguments but we have an array
+        newFunc2.apply(obj, ['CSE', 'BE']);
+
+        console.log(Math.min(1,2,3,4,5));
+
+        const arr = [6,5,3,6,8];
+
+        console.log( Math.min([6,5,3,6,8]));
+        console.log(Math.min.apply(null, arr));
+
+
+    </script>
+</body>
+</html>
