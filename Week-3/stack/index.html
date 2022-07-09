@@ -35,7 +35,90 @@
         stack.pop();
         stack.print();
 
-        // console.log(stack.stack);
+        // class Person {
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        // }
+
+        // class Employee extends Person {
+        //     constructor(name, age, type) {
+        //         super(name, age);
+        //         this.type = type;
+        //     }
+        // }
+
+        // function Person(name, age) {
+        //     'use strict'
+        //     this.name = name;
+        //     this.age = age;
+        // }
+
+        // function Employee(name, age, type) {
+        //     Person.call(this, name, age);
+        //     this.type = type;
+        // }
+
+        // Employee.prototype.method = () => {
+
+        // }
+
+        // Object.setPrototypeOf(Employee.prototype, Person.prototype);
+
+        // let emp1 = new Employee('haja', 22, 'SWE');
+        // let emp2 = new Employee('haja1', 22, 'SWE');
+
+        // console.log(emp1);
+        // console.log(emp2);
+        'use strict';
+        // const obj = {
+        //     get name() {
+        //         console.log('getter');
+        //         return name;
+        //     },
+        //     set name(name) {
+        //         console.log('in setter '+ name);
+        //         this.name = name;
+        //     }
+        // }
+
+        // class Person {
+        //     get name() {
+        //         console.log('getter');
+        //         return this._name;
+        //     }
+        //     set name(name) {
+        //         console.log('setter');
+        //         this._name = name;
+        //     }
+        // }
+
+        // let obj = new Person();
+
+        // console.log(Object.getOwnPropertyDescriptor(obj, '_name'));
+        // console.log(10);
+        // const p = new Promise((resolve, reject) => {
+        //     resolve(30);
+        // }).then(x => console.log(30));
+        // console.log(40);
+
+
+        new Promise((resolve, reject) => {
+            resolve(1000);
+        }).then(x => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log(x);
+                    resolve(x);
+                }, 0)
+            });
+        })
+        .then(x => console.log(100))
+        .then(x => console.log(10));
+
+
+
 
     </script>
 </body>
