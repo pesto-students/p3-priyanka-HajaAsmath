@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = 'aaaeeiiooouu';
+        let vowels = new Set();
+        for(let i of ['a','e','i','o','u']) {
+            vowels.add(i);
+        }
+        let vowelsCount = new Map();
+
+        for(let i of str) {
+            i = i.toLowerCase();
+            if(vowels.has(i)) {
+                if(vowelsCount.has(i)) {
+                    vowelsCount.set(i, vowelsCount.get(i) + 1);
+                } else {
+                    vowelsCount.set(i, 1);
+                }
+            }
+        }
+
+        console.log(vowelsCount);
+    </script>
+</body>
+</html>
