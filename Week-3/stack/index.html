@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createStack() {
+            const stack = [];
+
+            push = function(a) {
+                stack.push(a);
+            }
+
+            pop = function() {
+                stack.pop();
+            }
+
+            print = function() {
+                console.log(stack);
+            }
+
+            return {push, pop, print};
+        }
+
+        const stack = createStack();
+
+        stack.push('hello');
+        stack.push('hi');
+        stack.push(1000);
+        stack.print();
+        stack.pop();
+        stack.print();
+
+        // console.log(stack.stack);
+
+    </script>
+</body>
+</html>
