@@ -1,0 +1,138 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(0,0,0);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    height: 300px;
+    width: 30%;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    box-shadow: 0 2rem 4rem rgb(0 0 0 / 60%);
+    background-color: #f7f7f7;
+    padding: 20px 30px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.1rem;
+    color: #3ba395;
+    line-height: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-text-area {
+    resize: none;
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+form {
+    height: inherit;
+}
+
+#task-name {
+    font-size: x-large;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#task-details {
+    font-family: sans-serif;
+    height: 55%;
+    margin-bottom: 10px;
+}
+
+.priority-block {
+    margin-top: 10px;
+    height: 30px;
+}
+
+.priority-btn {
+    height: 100%;
+    width: 5rem;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px 5px;
+}
+
+#priority-high {
+    color: #FF5722;
+    border: 1px solid #FF5722;
+    transition: background-color 1s;
+    transition: color 0.2s;
+}
+
+#priority-high:hover {
+    background-color: #FF5722;
+    color: white;
+}
+
+#priority-high.active {
+    background-color: #FF5722;
+    color: white;
+}
+
+#priority-medium {
+    color: #FFB300;
+    border: 1px solid #FFB300;
+    transition: background-color 1s;
+    transition: color 0.2s;
+}
+
+#priority-medium:hover {
+    background-color: #FFB300;
+    color: white;
+}
+
+#priority-medium.active {
+    background-color: #FFB300;
+    color: white;
+}
+
+#priority-low {
+    color: #81C784;
+    border: 1px solid #81C784;
+    transition: background-color 1s;
+    transition: color 0.2s;
+}
+
+#priority-low:hover {
+    background-color: #81C784;
+    color: white;
+}
+
+#priority-low.active {
+    background-color: #81C784;
+    color: white;
+}
+
+#submit {
+    height: 100%;
+    width: 5rem;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0px 5px;
+    float: right;
+    color: #4FC3F7;
+    border: 1px solid #4FC3F7;
+    transition: background-color 1s;
+    transition: color 0.2s;
+}
+
+#submit:hover {
+    color: white;
+    background-color: #4FC3F7;
+}
