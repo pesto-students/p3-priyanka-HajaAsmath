@@ -1,0 +1,16 @@
+Footer {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 40px;
+    background-color: rgb(240, 241, 245);
+}
+
+#contact-us-btn {
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    padding: 7px 0px;
+}
+
