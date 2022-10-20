@@ -1,0 +1,17 @@
+{
+  "name": "week-13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.7",
+    "util": "^0.12.4"
+  }
+}
