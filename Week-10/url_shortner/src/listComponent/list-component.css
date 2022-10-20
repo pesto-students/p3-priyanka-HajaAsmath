@@ -1,0 +1,54 @@
+.copyBtn {
+    background-color: rgb(251, 111, 89);
+    border: 1px solid #d2d2d2;
+    height: 40px;
+    margin: 10px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.copyBtn:hover {
+    background-color: rgb(220, 93, 74);
+}
+
+.url-list {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0px 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.url-content {
+    margin: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    max-height: 210px;
+    overflow: scroll;
+}
+
+.url-content>ul {
+    list-style-type: none;
+}
+
+
+.url-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actual-url {
+    padding: 20px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 400px;
+    text-align: left;
+}
+
+.shorter-url {
+    color: rgb(42, 205, 204);
+}
